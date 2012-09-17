@@ -50,7 +50,7 @@ And on August 16th 2012, Joyent suddenly announced the end of this lifetime offe
 The announcement struck many as abrupt. Some took it to be an abandonment of, if not an insult to, your good faith, written in marketing and lawyer speak.
 {% endblockquote %}
 
-Naturally, nobody in the VC200 or other VC buy-in options (there were several others for other account services once the company was up and running) were very pleased. Not to mention boggled since the offer was for "the lifetime of the company", and Joyent didn't exactly look like they were in the red.
+Naturally, nobody in the VC200 or other VC buy-in options (there were several others for other account services once the company was up and running) was very pleased. Not to mention boggled since the offer was for "the lifetime of the company", and Joyent didn't exactly look like they were in the red.
 
 I understand Joyent's point of view. They have moved away from the kind of shared hosting TextDrive was based on, into cloud-based services. They are a whole lot bigger now than they were when they acquired TextDrive, and the shared hosting was an old legacy remnant. It makes perfect sense from a business point of view for them to get rid of an old legacy system that doesn't earn them a profit.
 
