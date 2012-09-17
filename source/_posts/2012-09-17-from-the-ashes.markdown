@@ -28,7 +28,7 @@ WordPress is perfectly fine for blogging, but I started getting annoyed at seein
 
 The static site Jekyll generates is about as complicated as a hammer. If I feel I want something dynamic like comments, I can always enable an embedded third-party comment solution.
 
-It feels good writing like this too. I have the blog entries as flat text files in a local Git repository (I'll toss it up on [GitHub](http://github.com/) later), I can run Jekyll in a local preview mode before I build a static site out of it and sync that to my web host.
+It feels good writing like this too. I have the blog entries as flat text files in a local Git repository (~~I'll toss it up on [GitHub](http://github.com/) later~~ [here it is](https://github.com/jsvensson/octopress)), I can run Jekyll in a local preview mode before I build a static site out of it and sync that to my web host.
 
 I have everything from the old WordPress blog backed up, but I have to do some text massage on it before I can import that into Jekyll -- it's all written in Textile instead of Markdown, and I'll have to do some fiddling later to get that into Jekyll in a proper format. So at the moment it's very bare metal here.
 
