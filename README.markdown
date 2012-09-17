@@ -1,6 +1,6 @@
 ## What the what? ##
 
-This is my blog, [Atomic Playboy](http://atomicplayboy.net/). It's powered by [Jekyll][jekyll] by means of [OctoPress][octopress].
+This is my blog, [Atomic Playboy](http://atomicplayboy.net/). It's powered by [Jekyll][jekyll] by means of [Octopress][octopress].
 
 [jekyll]: https://github.com/mojombo/jekyll
 [octopress]: http://octopress.org/
