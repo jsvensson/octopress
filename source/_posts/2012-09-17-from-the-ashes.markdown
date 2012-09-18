@@ -24,7 +24,7 @@ I hope I can write some more about that later. I have plenty of things I feel I 
 
 I'm now running this blog on [Jekyll](http://jekyllrb.com/). After many a year on [WordPress](http://wordpress.org/) I decided that a static page solution was more fitting for my needs -- there are zero security holes if there's absolutely nothing dynamic about it. Sometimes you don't need any moving parts.
 
-WordPress is perfectly fine for blogging, but I started getting annoyed at seeing "new version available" every time I logged in and felt I had to start the session by upgrading in case of security holes.
+WordPress is perfectly fine for blogging, but I started getting annoyed at seeing "new version available" every time I logged in (no, I don't log in very frequently) and felt I had to start the session by upgrading in case of security holes. And naturally I had to upgrade plugins as well.
 
 The static site Jekyll generates is about as complicated as a hammer. If I feel I want something dynamic like comments, I can always enable an embedded third-party comment solution.
 
