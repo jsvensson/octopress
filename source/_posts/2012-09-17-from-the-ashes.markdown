@@ -22,7 +22,7 @@ I hope I can write some more about that later. I have plenty of things I feel I 
 
 ## Guts & Gears ##
 
-I'm now running this blog on [Jekyll](http://jekyllrb.com/). After many a year on [WordPress](http://wordpress.org/) I decided that a static page solution was more fitting for my needs -- there are zero security holes if there's absolutely nothing dynamic about it. Sometimes you don't need any moving parts.
+I'm now running this blog on [Octopress](http://octopress.org/), a blogging framework based on [Jekyll](http://jekyllrb.com/). After many a year on [WordPress](http://wordpress.org/) I decided that a static page solution was more fitting for my needs -- there are zero security holes if there's absolutely nothing dynamic about it. Sometimes you don't need any moving parts.
 
 WordPress is perfectly fine for blogging, but I started getting annoyed at seeing "new version available" every time I logged in (no, I don't log in very frequently) and felt I had to start the session by upgrading in case of security holes. And naturally I had to upgrade plugins as well.
 
