@@ -1,2 +1,5 @@
 Redirect 301 /+ https://plus.google.com/102579690268626192029
 Redirect 301 /lol http://signup.leagueoflegends.com/?ref=4e5017313f3af147820846
+
+# Redirect old WP feed to Octopress feed
+Redirect 301 /feed http://atomicplayboy.net/atom.xml
