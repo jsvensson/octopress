@@ -17,3 +17,11 @@ I live in Stockholm, Sweden, with my cat April, who is annoyed at the number of 
 My email is _myfirstname @ this domain_. Consider this a puzzle.
 
 You can also find me on [Twitter](https://twitter.com/echo) and [GitHub](https://github.com/jsvensson).
+
+## Comment policy ##
+
+My comment policy is, at the moment, quite simply _no comments_.
+
+I may or may not change my mind in the future. But as it stands right now, I find comments mostly annoying. Most of the time it's either spam or something that contributes absolutely nothing at all.
+
+I do however encourage people to write responses on their own blog. I'll spot them if they link me.
