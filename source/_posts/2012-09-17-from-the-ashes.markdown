@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From the Ashes
+title: From the ashes
 date: 2012-09-17 15:39
 comments: true
 tags:
@@ -20,7 +20,7 @@ But I finally feel that things are in motion again, and more importantly that I 
 
 I hope I can write some more about that later. I have plenty of things I feel I want to get off my chest.
 
-## Guts & Gears ##
+## Guts & gears ##
 
 I'm now running this blog on [Octopress](http://octopress.org/), a blogging framework based on [Jekyll](http://jekyllrb.com/). After many a year on [WordPress](http://wordpress.org/) I decided that a static page solution was more fitting for my needs -- there are zero security holes if there's absolutely nothing dynamic about it. Sometimes you don't need any moving parts.
 
@@ -32,7 +32,7 @@ It feels good writing like this too. I have the blog entries as flat text files 
 
 I have everything from the old WordPress blog backed up, but I have to do some text massage on it before I can import that into Jekyll -- it's all written in Textile instead of Markdown, and I'll have to do some fiddling later to get that into Jekyll in a proper format. So at the moment it's very bare metal here.
 
-## TextDrive Lives Again ##
+## TextDrive lives again ##
 
 There's also the whole issue with [Joyent][joyent] and [TextDrive][textdrive] that's partially to blame for me doing this switch.
 

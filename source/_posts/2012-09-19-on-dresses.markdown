@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Dresses
+title: On dresses
 date: 2012-09-19 23:02
 comments: true
 categories:
