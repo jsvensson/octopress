@@ -33,20 +33,16 @@ That sounds more to my liking -- no moving parts where they aren't needed. Rathe
 
 Installation under OS X couldn't get any easier thanks to [Homebrew](http://mxcl.github.com/homebrew/).
 
-{% codeblock %}
-brew update
-brew install rbenv
-brew install ruby-build
-{% endcodeblock %}
+    brew update
+    brew install rbenv
+    brew install ruby-build
 
 `rbenv` is the main package; `ruby-build` is a plugin that makes it a snap to download, compile and install some version of Ruby.
 
 Once that's installed, you'll need to run two lines in your shell profile of choice. I have them [in my dotfiles][dotfiles], but stick them wherever (`~/.profile` might be an idea to always load it):
 
-{% codeblock %}
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-{% endcodeblock %}
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
 
 The first line adds `rbenv` to your `$PATH` so it's available for use; the second loads the shims and some other stuff. There's [a detailed explanation][neckbeard] for all the gruesome details.
 
@@ -54,22 +50,16 @@ Now, reload/restart your shell and everything should be up and running. However,
 
 As of writing this, `1.9.3-p194` is the current stable version. To download and install that:
 
-{% codeblock %}
-rbenv install 1.9.3-p194
-{% endcodeblock %}
+    rbenv install 1.9.3-p194
 
 Couldn't be any easier. You have some options ([detailed here][usage]) for how to run it, but as mentioned I simply want a fresh Ruby version. So I set it to run globally:
 
-{% codeblock %}
-echo '1.9.3-p194' > ~/.rbenv/version
-{% endcodeblock %}
+    echo '1.9.3-p194' > ~/.rbenv/version
 
 Reload the shell again (just in case; might not be needed) and then check the Ruby version.
 
-{% codeblock %}
-% ruby -v
-ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-darwin11.4.2]
-{% endcodeblock %}
+    % ruby -v
+    ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-darwin11.4.2]
 
 And there you have it.
 
@@ -79,26 +69,20 @@ After that, time to configure [Bundler][bundler]. With RVM I ended up simply ins
 
 `rbenv-bundler` is a plugin that makes `rbenv` Bundler-aware and saves you from having to type `bundler exec` before everything you want to do with Bundler. As usual, it's available via Homebrew. 
 
-{% codeblock %}
-brew install rbenv-bundler
-{% endcodeblock %}
+    brew install rbenv-bundler
 
 Bundler is the only gem you will have to install the traditional way, and you'll need to do it once for each version of Ruby you install.
 
-{% codeblock %}
-gem install bundler
-rbenv rehash
-{% endcodeblock %}
+    gem install bundler
+    rbenv rehash
 
 The second line is required after installing a new Ruby version, or installing any gem that adds new binaries, in order to update the shims.
 
 Stick this in `~/.bundle/config` to prevent Bundler from sharing gems, and install gems in a `vendor` directory under your project root where the `Gemfile` resides.
 
-{% codeblock %}
----
-BUNDLE_PATH: vendor
-BUNDLE_DISABLE_SHARED_GEMS: "1"
-{% endcodeblock %}
+    ---
+    BUNDLE_PATH: vendor
+    BUNDLE_DISABLE_SHARED_GEMS: "1"
 
 And that's your Ruby environment set up and configured using `rbenv`. Just remember to run `rbenv rehash` after every `bundle install` in order to update the shims.
 
@@ -106,15 +90,11 @@ And that's your Ruby environment set up and configured using `rbenv`. Just remem
 
 There's one final step you can take to clean up any gems you may have installed into your system Ruby. To find them, run:
 
-{% codeblock %}
-/usr/bin/gem list --no-versions
-{% endcodeblock %}
+    /usr/bin/gem list --no-versions
 
 After double-checking that list to make sure there's nothing you need (if you ever go back to running the system Ruby), you can uninstall them all:
 
-{% codeblock %}
-/usr/bin/gem list --no-versions | xargs sudo /usr/bin/gem uninstall
-{% endcodeblock %}
+    /usr/bin/gem list --no-versions | xargs sudo /usr/bin/gem uninstall
 
 
 [neckbeard]: https://github.com/sstephenson/rbenv#section_2.3
