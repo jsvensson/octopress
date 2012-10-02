@@ -2,7 +2,7 @@
 layout: post
 title: "A Ruby environment"
 date: 2012-09-23 23:54
-tags:
+categories:
  - ruby
  - programming
 comments: false

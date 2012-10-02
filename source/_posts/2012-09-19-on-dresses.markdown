@@ -4,7 +4,6 @@ title: On dresses
 date: 2012-09-19 23:02
 comments: true
 categories:
-tags:
  - culture
  - sexuality
 published: true

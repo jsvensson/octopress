@@ -3,7 +3,7 @@ layout: post
 title: From the ashes
 date: 2012-09-17 15:39
 comments: true
-tags:
+categories:
 - life
 - blogging
 - textdrive

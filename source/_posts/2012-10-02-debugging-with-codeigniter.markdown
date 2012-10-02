@@ -2,7 +2,7 @@
 layout: post
 title: "Debugging with CodeIgniter"
 date: 2012-10-02 12:47
-tags:
+categories:
  - programming
  - php
 comments: false
