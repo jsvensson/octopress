@@ -5,6 +5,7 @@ date: 2012-10-02 12:47
 categories:
  - programming
  - php
+ - codeigniter
 comments: false
 published: true
 ---
