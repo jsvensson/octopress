@@ -32,7 +32,7 @@ function inspect($var,$forceType="",$bCollapsed=false) {
   ...
 ```
 
-That's all the modifications needed. While in an development environment, it might be a good idea to auto-load dBug in `autoload.php`:
+That was all the modification needed. While in a development environment, it might be a good idea to auto-load dBug in `autoload.php`:
 
 ``` php
 $autoload['libraries'] = array('dbug');
