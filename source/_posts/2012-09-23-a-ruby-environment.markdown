@@ -54,7 +54,7 @@ As of writing this, `1.9.3-p194` is the current stable version. To download and 
 
 Couldn't be any easier. You have some options ([detailed here][usage]) for how to run it, but as mentioned I simply want a fresh Ruby version. So I set it to run globally:
 
-    echo '1.9.3-p194' > ~/.rbenv/version
+    rbenv global 1.9.3-p194
 
 Reload the shell again (just in case; might not be needed) and then check the Ruby version.
 
@@ -90,7 +90,7 @@ And that's your Ruby environment set up and configured using `rbenv`. Just remem
 
 There's one final step you can take to clean up any gems you may have installed into your system Ruby. To find them, run:
 
-    /usr/bin/gem list --no-versions
+    /usr/bin/gem list
 
 After double-checking that list to make sure there's nothing you need (if you ever go back to running the system Ruby), you can uninstall them all:
 
