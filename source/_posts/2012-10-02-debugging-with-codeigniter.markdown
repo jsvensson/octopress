@@ -21,14 +21,14 @@ After downloading dBug, place `dBug.php` in `application/libraries`. Rename it t
 
 Since dBug expects an argument in its constructor, we'll have to make a new empty constructor to use it in CodeIgniter.
 
-While in there, rename the original constructor; I chose `show`. This is the method you'll call via the CI superobject to inspect things.
+While in there, rename the original constructor; I chose `inspect`. This is the method you'll call via the CI superobject to inspect things.
 
 ``` php
 // Empty constructor for CodeIgniter
 function Dbug() { }
 
 // Rename the original constructor
-function show($var,$forceType="",$bCollapsed=false) {
+function inspect($var,$forceType="",$bCollapsed=false) {
   ...
 ```
 
@@ -41,7 +41,7 @@ $autoload['libraries'] = array('dbug');
 Now you can easily inspect stuff:
 
 ``` php
-$this->dbug->show($this->session->all_userdata());
+$this->dbug->inspect($this->session->all_userdata());
 ```
 
 [codeigniter]: http://codeigniter.com/

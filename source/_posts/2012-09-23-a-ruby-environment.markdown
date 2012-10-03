@@ -27,7 +27,7 @@ It got messy, and eventually things broke. I decided it was time to switch to [r
 rbenv lets you easily switch between multiple versions of Ruby. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
 {% endblockquote %}
 
-That sounds more to my liking -- no moving parts where they aren't needed. Rather than overriding the `cd` command and automagically running code when switching to directories like RVM does, rbenv simply injects a few [shims][shims] and lets that override the Ruby version used. And all I need is that one fresh version.
+That sounds more to my liking -- no moving parts where they aren't needed. Rather than overriding the `cd` command and automagically running code when entering directories like RVM does, rbenv simply injects a few [shims][shims] and lets that override the Ruby version used. And all I need is that one fresh version.
 
 ## Installation ##
 
