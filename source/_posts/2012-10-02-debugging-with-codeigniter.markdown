@@ -23,23 +23,26 @@ Since dBug expects an argument in its constructor, we'll have to make a new empt
 
 While in there, rename the original constructor; I chose `show`. This is the method you'll call via the CI superobject to inspect things.
 
-{% codeblock Modified constructors lang:php %}
+``` php
 // Empty constructor for CodeIgniter
 function Dbug() { }
 
 // Rename the original constructor
 function show($var,$forceType="",$bCollapsed=false) {
   ...
-{% endcodeblock %}
+```
 
 That's all the modifications needed. While in an development environment, it might be a good idea to auto-load dBug in `autoload.php`:
 
-    $autoload['libraries'] = array('dbug');
+``` php
+$autoload['libraries'] = array('dbug');
+```
 
 Now you can easily inspect stuff:
 
-    $this->dbug->show($this->session->all_userdata());
-
+``` php
+$this->dbug->show($this->session->all_userdata());
+```
 
 [codeigniter]: http://codeigniter.com/
 [dbug]: http://dbug.ospinto.com/
