@@ -5,7 +5,7 @@ date: 2012-09-21 16:01
 categories: 
  - games
  - business
-comments: false
+comments: true
 published: false
 ---
 

@@ -6,7 +6,7 @@ categories:
  - programming
  - php
  - codeigniter
-comments: false
+comments: true
 published: true
 ---
 

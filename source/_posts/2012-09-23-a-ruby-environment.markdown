@@ -5,7 +5,7 @@ date: 2012-09-23 23:54
 categories:
  - ruby
  - programming
-comments: false
+comments: true
 published: true
 ---
 
