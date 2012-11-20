@@ -68,7 +68,7 @@ wordlist.length.times do |i|
 end
 {% endcodeblock %}
 
-That's a lot more readable -- it boils down to just doing a `letters["A"] += 1` on the key to count letters, without having to bother about what may or may not already be stored in the hash.
+That's a lot more readable -- it boils down to just doing `letters["A"] += 1` to count letters, without having to bother about what may or may not already be stored in the hash.
 
 ## Let's sort stuff ##
 
