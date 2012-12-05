@@ -141,7 +141,7 @@ I just don't understand how it works internally. `h.sort` returns an `Array`; `h
 Iterates over the block according to how this Enumerable was constructed. If no block is given, returns self.
 {% endblockquote %}
 
-Enumerables are still a bit of a mystery to me. Definitely something I need to look closer at.
+Enumerables are still a bit of a mystery to me. Definitely something I need to take a closer look at.
 
 ## Wrapping up ##
 
