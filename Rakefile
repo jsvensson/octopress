@@ -4,11 +4,11 @@ require "stringex"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "echo@bonita.joyent.us"
+ssh_user       = "echo@165.225.146.68"
 ssh_port       = "22"
-document_root  = "~/web/public/"
+document_root  = "/users/home/echo/web/public/"
 rsync_delete   = false
-rsync_args     = "--chmod=Fa+r"
+rsync_args     = "" # "--chmod=Fa+r"
 deploy_default = "rsync"
 
 # This will be configured for you when you run config_deploy
@@ -301,7 +301,7 @@ task :setup_github_pages, :repo do |t, args|
   if args.repo
     repo_url = args.repo
   else
-    puts "Enter the read/write url for your repository" 
+    puts "Enter the read/write url for your repository"
     puts "(For example, 'git@github.com:your_username/your_username.github.com)"
     repo_url = get_stdin("Repository url: ")
   end
