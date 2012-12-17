@@ -2,7 +2,9 @@
 layout: post
 title: "TextDrive"
 date: 2012-12-12 13:15
-tags: meta
+categories:
+ - meta
+ - textdrive
 comments: false
 published: true
 ---
