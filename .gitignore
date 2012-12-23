@@ -5,7 +5,8 @@
 .pygments-cache
 .sass-cache
 /.preview-mode
-/.themes/slash/
+/.themes/kestrel
+/.themes/slash
 _deploy
 node_modules
 public
