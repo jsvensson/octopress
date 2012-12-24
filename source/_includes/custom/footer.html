@@ -1,6 +1,2 @@
 Copyright &copy; {{ site.time | date: "%Y" }}
-<a href="/about/">{% if site.author %}
-    {{ site.author }}
-{% else %}
-    {{ site.title }}
-{% endif %}</a>
+<a href="/about/">{% if site.author %}{{ site.author }}{% else %}{{ site.title }}{% endif %}</a>.
