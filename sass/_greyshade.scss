@@ -121,6 +121,9 @@ body {
 						}
 					}
 					h1.title{
+						&.main {
+							font-size: 300%;
+						}
 						a {
 							color: #333;
 							-webkit-transition: color 0.3s;
