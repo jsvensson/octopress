@@ -36,7 +36,7 @@ module Footnote
 
 		def render(context)
 			unless @reference.nil?
-				"<sup id='fnref:#{@reference}'><a href='#fn:#{@reference}' rel='footnote'>#{@reference}</a></sup>"
+				"<sup id=\"fnref:#{@reference}\"><a href=\"#fn:#{@reference}\" rel=\"footnote\">#{@reference}</a></sup>"
 			end
 		end
 	end
