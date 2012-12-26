@@ -283,7 +283,7 @@ task :deploy do
 end
 
 desc "Generate website and deploy"
-task :gen_deploy => [:integrate, :generate, :deploy] do
+task :gd => [:integrate, :generate, :deploy] do
 end
 
 desc "copy dot files for deployment"
