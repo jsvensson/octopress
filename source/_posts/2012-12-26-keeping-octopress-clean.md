@@ -5,7 +5,7 @@ date: 2012-12-26 14:48
 categories:
  - octopress 
 comments: true
-published: false
+published: true
 ---
 
 [Octopress][octopress] uses [rsync][rsync] to deploy to the web host. Keeping the files on the host cleaned up might be a bit of a worry if you're like me{% fn_ref 1 %}.
