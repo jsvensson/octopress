@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About this Site
+title: About the Site
 comments: false
 footer: true
 ---
