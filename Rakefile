@@ -7,8 +7,8 @@ require "stringex"
 ssh_user       = "echo@165.225.146.68"
 ssh_port       = "22"
 document_root  = "/users/home/echo/web/public/"
-rsync_delete   = false
-rsync_args     = "" # "--chmod=Fa+r"
+rsync_delete   = true
+rsync_args     = "--filter='merge .rsync-filter'"  # "--chmod=Fa+r"
 deploy_default = "rsync"
 
 # This will be configured for you when you run config_deploy
