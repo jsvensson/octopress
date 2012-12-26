@@ -27,8 +27,8 @@ deploy_dir      = "_deploy"   # deploy directory (for GitHub pages deployment)
 stash_dir       = "_stash"    # directory to stash posts for speedy generation
 posts_dir       = "_posts"    # directory for blog files
 themes_dir      = ".themes"   # directory for blog files
-new_post_ext    = "markdown"  # default new post file extension when using the new_post task
-new_page_ext    = "markdown"  # default new page file extension when using the new_page task
+new_post_ext    = "md"  # default new post file extension when using the new_post task
+new_page_ext    = "md"  # default new page file extension when using the new_page task
 server_host     = ENV['OCTOPRESS_IP']   || '0.0.0.0'   # host ip address for preview server
 server_port     = ENV['OCTOPRESS_PORT'] || "4000"      # port for preview server eg. localhost:4000
 
@@ -342,7 +342,7 @@ multitask :push do
       end
     end
   else
-    puts "This project isn't configured for deploying to GitHub Pages\nPlease run `rake setup_github_pages[your-deployment-repo-url]`." 
+    puts "This project isn't configured for deploying to GitHub Pages\nPlease run `rake setup_github_pages[your-deployment-repo-url]`."
   end
 end
 
@@ -450,12 +450,12 @@ task :setup_github_pages, :repo do |t, args|
     f.write rakefile
   end
 
-  # Configure published url 
+  # Configure published url
   jekyll_config = IO.read('_config.yml')
   current_url = /^url:\s?(.*$)/.match(jekyll_config)[1]
   has_cname = File.exists?("#{source_dir}/CNAME")
   if current_url == 'http://yoursite.com'
-    jekyll_config.sub!(/^url:.*$/, "url: #{url}") 
+    jekyll_config.sub!(/^url:.*$/, "url: #{url}")
     File.open('_config.yml', 'w') do |f|
       f.write jekyll_config
     end
