@@ -51,6 +51,7 @@ module Footnote
 		def render(context)
 			<<-end_html
 <div class="footnotes">
+<h3>Footnotes</h3>
 	<ol>
 		#{@footnotes.join}
 	</ol>
