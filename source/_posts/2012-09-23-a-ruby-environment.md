@@ -97,7 +97,7 @@ After double-checking that list to make sure there's nothing you need (if you ev
     /usr/bin/gem list --no-versions | xargs sudo /usr/bin/gem uninstall
 
 
-[neckbeard]: https://github.com/sstephenson/rbenv#section_2.3
+[neckbeard]: https://github.com/sstephenson/rbenv#neckbeard-configuration
 [rbenv]: https://github.com/sstephenson/rbenv
 [shims]: http://en.wikipedia.org/wiki/Shim_(computing)
 [dotfiles]: https://github.com/jsvensson/dotfiles
