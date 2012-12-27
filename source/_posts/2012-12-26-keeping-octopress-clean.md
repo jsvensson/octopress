@@ -25,7 +25,8 @@ I found the solution in rsync's [filter options][rsync-man]. I've used `--includ
 First of all, set it up{% fn_ref 3 %} in your `Rakefile`:
 
 ``` ruby
-rsync_args = "--filter='merge rsync-filter'"
+rsync_delete = true
+rsync_args   = "--filter='merge rsync-filter'"
 ```
 
 Next, create a file named `rsync-filter` in your Octopress root directory. This is where you state which files you want to keep untouched on the destination host.
