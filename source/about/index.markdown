@@ -28,6 +28,16 @@ Eh, just a phrase that I heard in the early 90s and has been firmly stuck in my 
 [admiral]: http://en.wikipedia.org/wiki/William_H._P._Blandy
 [bikiniatoll]: http://en.wikipedia.org/wiki/Bikini_Atoll
 
+## The Blog?
+
+This blog runs on [Octopress][octopress], an excellent [Jekyll][jekyll] framework for static site generation. That means I have no moving parts at all on the server-side of the site. Because I don't really need them.
+
+I'm hosted by the upstanding gentlemen at [TextDrive][textdrive].
+
+[octopress]: http://octopress.org/
+[jekyll]: https://github.com/mojombo/jekyll
+[textdrive]: http://textdrive.com/
+
 ## Comment Policy
 
 I reserve the right to delete any comment for no reason whatsoever.
