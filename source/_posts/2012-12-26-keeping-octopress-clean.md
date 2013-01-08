@@ -18,6 +18,10 @@ The Octopress `Rakefile` has the `rsync_delete` option which will make rsync del
 
 That's fine to use, unless you have non-Octopress files at the destination. I run my Octopress blog in the root of my site and have other directories there that I for natural reasons don't keep in my Octopress source directory, so `rsync --delete` would delete those.
 
+<ins>Update Jan 8th 2013:</ins> After a brief "doh" moment I realized that Octopress already supports this, [as clearly documented](http://octopress.org/docs/deploying/rsync/). I was aware of the `rsync-exclude` file, but in my mind that meant it only dealt with not uploading the excluded local files to the destination. As clearly mentioned, if the `rsync_delete` option is true it will not delete files listed in `rsync-exclude` on the destination.
+
+However, if you want to use the full abilities of rsync's filter rules, the rest of this article still stands.
+
 ## Rsync Filter Rules
 
 I found the solution in rsync's [filter options][rsync-man]. I've used `--include` and `--exclude` often, but after some RTFMing I learned that those parameters are just a subset of the actual filter rules.
