@@ -9,7 +9,7 @@ ssh_user       = "echo@165.225.146.68"
 ssh_port       = "22"
 document_root  = "/users/home/echo/web/public/"
 rsync_delete   = true
-rsync_args     = "--filter='merge rsync-filter'"  # "--chmod=Fa+r"
+rsync_args     = ""
 deploy_default = "rsync"
 
 # Hidden "dot" files that should be included with the deployed site (see task copydot)
