@@ -20,7 +20,7 @@ That's fine to use, unless you have non-Octopress files at the destination. I ru
 
 <ins>Update Jan 8th 2013:</ins> After a brief "doh" moment I realized that Octopress already supports this, [as clearly documented](http://octopress.org/docs/deploying/rsync/). I was aware of the `rsync-exclude` file, but in my mind that meant it only dealt with not uploading the excluded local files to the destination. As clearly mentioned, if the `rsync_delete` option is true it will not delete files listed in `rsync-exclude` on the destination.
 
-However, if you want to use the full abilities of rsync's filter rules, the rest of this article still stands.
+However, if you want to use the full abilities of rsync's filter rules, the rest of this article still stands and has been modified to accommodate better exclude filter rules.
 
 ## Rsync Filter Rules
 
@@ -35,11 +35,13 @@ rsync_args   = "--filter='merge rsync-filter'"
 
 Next, create a file named `rsync-filter` in your Octopress root directory. This is where you state which files you want to keep untouched on the destination host.
 
-    P dir1/
-    P dir2/
-    P file.html
+    - dir1/
+    - dir2/
+    - file.html
 
-There are plenty of other options for the filter, but `P` is what we're after here -- it makes the files and folders *protected*, meaning rsync will leave them alone on the destination when `--delete` is used.
+There are plenty of other options for the filter, but `-` is what we're after here -- it makes the files and folders excluded, meaning rsync will leave them alone on the destination when `--delete` is used. The rsync man page says this about `--delete`:
+
+> This  tells rsync to delete extraneous files from the receiving side (ones that aren’t on the sending side), but only for the directories that are being synchronized. (...) **Files that are  excluded from transfer are also excluded from being deleted** unless you use the `--delete-excluded` option or mark the rules as only matching on the sending side (...)
 
 ## Danger! High Voltage!
 
