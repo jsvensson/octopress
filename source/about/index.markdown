@@ -40,8 +40,11 @@ I'm hosted by the upstanding gentlemen at [TextDrive][textdrive].
 
 ## Comment Policy
 
-I reserve the right to delete any comment for no reason whatsoever.
+Two basic rules:
 
-I may or may not change my mind in the future. But as it stands right now, I find comments mostly annoying. Most of the time it's either spam or something that contributes absolutely nothing at all, but I still need to either answer or delete it -- leaving it unanswered isn't an option for me.
+1. I reserve the right to delete any comment for no reason whatsoever.
+2. The only insult I will tolerate in a commentis "you silly goose". If you need to use anything harsher than that, you don't have anything constructive to contribute anyway.
+
+I may or may not change my mind in the future. But as it stands right now, I find comments mostly annoying. Most of the time it's either spam or something that contributes absolutely nothing at all, but I still need to either respond to it or delete it -- leaving it unanswered isn't an option for me.
 
 I do however encourage people to write responses on their own blog. I'll spot them if they link me.
