@@ -35,11 +35,11 @@ rsync_args   = "--filter='merge rsync-filter'"
 
 Next, create a file named `rsync-filter` in your Octopress root directory. This is where you state which files you want to keep untouched on the destination host.
 
-    - dir1/
-    - dir2/
-    - file.html
+    P dir1/
+    P dir2/
+    P file.html
 
-There are plenty of other options for the filter, but `-` is what we're after here -- it makes the files and folders excluded, meaning rsync will leave them alone on the destination when `--delete` is used. The rsync man page says this about `--delete`:
+There are plenty of other options for the filter, but `P` is what we're after here -- it makes the files and folders excluded, meaning rsync will leave them alone on the destination when `--delete` is used. The rsync man page says this about `--delete`:
 
 > This  tells rsync to delete extraneous files from the receiving side (ones that aren’t on the sending side), but only for the directories that are being synchronized. (...) **Files that are  excluded from transfer are also excluded from being deleted** unless you use the `--delete-excluded` option or mark the rules as only matching on the sending side (...)
 
