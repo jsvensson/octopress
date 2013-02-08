@@ -111,7 +111,7 @@ It works, but I felt it was a bit obtuse and not very Ruby-like, recasting it to
 Now just loop through it and print the keys and values. However, note that we end up working with an array of the keys and thus lose access to the key-value pairs in the original hash -- we'll have to access the values via keys in the hash rather than having the block pass the values to us.
 
 {% codeblock Hash sorting, take 2 lang:ruby %}
-h.keys.sort.each { |key| puts "#{key}: #{h[key]}"}
+h.keys.sort.each { |key| puts "#{key}: #{h[key]}" }
 {% endcodeblock %}
 
 The syntax outside of the block feels a bit better than the first try, but I didn't like not getting the key-value pairs as variables in the block. It doesn't feel properly Ruby-like to work on another object than the one you actually want the information from.
@@ -130,7 +130,7 @@ I looked at [`Enumerable#sort`][Enumerable#sort] again:
 It returns the array-form of a hash. So I just tried looping through it with `each`. And it *worked*:
 
 {% codeblock Hash sorting, take 3 lang:ruby %}
-h.sort.each { |key, value| puts "#{key}: #{value}"}
+h.sort.each { |key, value| puts "#{key}: #{value}" }
 {% endcodeblock %}
 
 This felt like magic when I ran it. It's definitely the most Ruby-like syntax of them all -- take the hash `h`, sort it, loop through it with key and value as variables.
