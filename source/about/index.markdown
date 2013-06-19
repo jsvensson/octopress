@@ -43,7 +43,7 @@ I'm hosted by the upstanding gentlemen at [TextDrive][textdrive].
 Two basic rules:
 
 1. I reserve the right to delete any comment for no reason whatsoever.
-2. The only insult I will tolerate in a commentis "you silly goose". If you need to use anything harsher than that, you don't have anything constructive to contribute anyway.
+2. The only insult I will tolerate in a comment is "you silly goose". If you need to use anything harsher than that, you don't have anything constructive to contribute anyway. This is known as [the glorious edict](http://forums.penny-arcade.com/discussion/165388/the-rules).
 
 I may or may not change my mind in the future. But as it stands right now, I find comments mostly annoying. Most of the time it's either spam or something that contributes absolutely nothing at all, but I still need to either respond to it or delete it -- leaving it unanswered isn't an option for me.
 
