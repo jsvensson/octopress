@@ -47,7 +47,7 @@ class ListController extends BaseController
     // Target for POST form, run validation etc then create list
   }
 
-} ?>
+}
 ```
 
 This is a very handy way to avoid having to check if you're getting any POST input data -- `getNewList()` is always what creates the view (accessed via `/list/new-list`), `postNewList()` is always where the actual form validation, logic handling and object creation takes place.
@@ -110,7 +110,7 @@ class ListTaskController extends BaseController
     return "Showing task $task_id for list $list_id";
   }
 
-} ?>
+}
 ```
 
 Now you can try things out:
