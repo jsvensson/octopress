@@ -5,7 +5,7 @@ require 'rake/minify'
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "echo@165.225.146.68"
+ssh_user       = "echo@147.255.50.153"
 ssh_port       = "22"
 document_root  = "/users/home/echo/web/public/"
 rsync_delete   = true
