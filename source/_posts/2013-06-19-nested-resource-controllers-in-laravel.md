@@ -26,7 +26,7 @@ Laravel has a couple of nifty features. It uses ye olde MVC structure, but the c
 First, define the route to the controller in your `routes.php`:
 
 ``` html+php routes.php
-  Route::controller('list', 'ListController');
+Route::controller('list', 'ListController');
 ```
 
 Now you can start writing your RESTful controller in `app/controllers/ListController.php`.
@@ -56,7 +56,7 @@ This is a very handy way to avoid having to check if you're getting any POST inp
 A [resource controller][resource-controller] is the second flavor of controllers. This uses [CRUD verbiage][crud] to set up the standard actions to create, read, update and destroy objects. Define it in your `routes.php`:
 
 ``` html+php routes.php
-  Route::resource('list', 'ListController');
+Route::resource('list', 'ListController');
 ```
 
 You can use Artisan to create a scaffold of empty stub methods corresponding to the CRUD verbs:
@@ -81,8 +81,8 @@ In other words, what we want is another set of CRUD verbs under the first set.
 We start by setting up our route:
 
 ``` html+php routes.php
-  Route::resource('list', 'ListController');
-  Route::resource('list.tasks', 'ListTaskController');
+Route::resource('list', 'ListController');
+Route::resource('list.tasks', 'ListTaskController');
 ```
 
 My personal preference is to name it `ListTaskController` to show that tasks belong to a list.
