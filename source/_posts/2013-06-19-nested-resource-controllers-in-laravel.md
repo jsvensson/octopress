@@ -59,7 +59,7 @@ A [resource controller][resource-controller] is the second flavor of controllers
 Route::resource('list', 'ListController');
 ```
 
-You can use Artisan to create a scaffold of empty stub methods corresponding to the CRUD verbs:
+You can use the Artisan CLI to create a scaffold of empty stub methods corresponding to the CRUD verbs:
 
     php artisan controller:make ListController
 
