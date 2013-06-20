@@ -24,7 +24,7 @@ Since dBug expects an argument in its constructor, we'll have to make a new empt
 
 While in there, rename the original constructor; I chose `inspect`. This is the method you'll call via the CI superobject to inspect things.
 
-``` php Dbug.php
+``` html+php Dbug.php
 // Empty constructor for CodeIgniter
 function Dbug() { }
 
@@ -35,13 +35,13 @@ function inspect($var,$forceType="",$bCollapsed=false) {
 
 That was all the modification needed. While in a development environment, it might be a good idea to auto-load dBug in `autoload.php`:
 
-``` php autoload.php
+``` html+php autoload.php
 $autoload['libraries'] = array('dbug');
 ```
 
 Now you can easily inspect stuff:
 
-``` php
+``` html+php
 $this->dbug->inspect($this->session->all_userdata());
 ```
 

@@ -25,15 +25,13 @@ Laravel has a couple of nifty features. It uses ye olde MVC structure, but the c
 
 First, define the route to the controller in your `routes.php`:
 
-``` php routes.php
+``` html+php routes.php
   Route::controller('list', 'ListController');
 ```
 
 Now you can start writing your RESTful controller in `app/controllers/ListController.php`.
 
-``` php ListController.php
-<?php
-
+``` html+php ListController.php
 class ListController extends BaseController
 {
 
@@ -57,7 +55,7 @@ This is a very handy way to avoid having to check if you're getting any POST inp
 
 A [resource controller][resource-controller] is the second flavor of controllers. This uses [CRUD verbiage][crud] to set up the standard actions to create, read, update and destroy objects. Define it in your `routes.php`:
 
-``` php routes.php
+``` html+php routes.php
   Route::resource('list', 'ListController');
 ```
 
@@ -82,7 +80,7 @@ In other words, what we want is another set of CRUD verbs under the first set.
 
 We start by setting up our route:
 
-``` php routes.php
+``` html+php routes.php
   Route::resource('list', 'ListController');
   Route::resource('list.tasks', 'ListTaskController');
 ```
@@ -95,9 +93,7 @@ The List controller can be written as usual. The Task controller requires an ext
 
 The route created for us looks like `/list/{list_id}/tasks/{task_id}` -- it contains two parameters, so any Task method that needs the task id will require them both; otherwise it will just get the first parameter containing the list id.
 
-``` php ListTaskController.php
-<?php
-
+``` html+php ListTaskController.php
 class ListTaskController extends BaseController
 {
   public function index($list_id)
