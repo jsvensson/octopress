@@ -67,7 +67,7 @@ And there you have it.
 
 After that, time to configure [Bundler][bundler]. With RVM I ended up simply installing every single gem straight into the Ruby version I had active. Now I'm using Bundler instead to install gems per project in the project's directory. It results in a small bit of duplication for commonly used gems, but it feels more manageable than cleaning out unused gems from your main Ruby install.
 
-`rbenv-bundler` is a plugin that makes `rbenv` Bundler-aware and saves you from having to type `bundler exec` before everything you want to do with Bundler. As usual, it's available via Homebrew. 
+`rbenv-bundler` is a plugin that makes `rbenv` Bundler-aware and saves you from having to type `bundler exec` before everything you want to do with Bundler. As usual, it's available via Homebrew.
 
     brew install rbenv-bundler
 
