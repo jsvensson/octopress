@@ -2,7 +2,7 @@
 layout: post
 title: "On freemium and subscriptions"
 date: 2012-09-21 16:01
-categories: 
+categories:
  - games
  - business
 comments: true

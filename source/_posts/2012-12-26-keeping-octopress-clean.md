@@ -3,7 +3,7 @@ layout: post
 title: "Keeping an Octopress Site Clean"
 date: 2012-12-26 14:48
 categories:
- - octopress 
+ - octopress
 comments: true
 published: true
 ---
