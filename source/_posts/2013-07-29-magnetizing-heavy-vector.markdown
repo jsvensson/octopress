@@ -54,6 +54,8 @@ These tend to rotate a bit -- I'm going add a very thin layer of greenstuff on t
 
 You can glue the shoulder joint into the right piston spike; it's not used for the other arms on the right side. Then drill a hole in the center of it on each side for magnets. I had to sand it down a fair bit before it fit into the shoulder socket.
 
+Note that the shoulder bit has two sides, you want the one with the cogs facing outward.
+
 We're doing this before we magnetize the right shoulder so we can use it as a reference for the polarity -- you really don't want to get it wrong.
 
 {% photo 130730-cyriss/8-right-piston.jpg %}
